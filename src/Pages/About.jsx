@@ -17,8 +17,8 @@ export default function About() {
                     voluptatem. Sit dolorum debitis veritatis natus dolores.
                     Quasi ratione sint. Sit quaerat ipsum dolorem.
                   </p>
-                  <a href="contact.html" class="cta-btn">
-                    Available for Hire
+                  <a href="#" class="cta-btn">
+                  <Link to="/contact">Available for Hire</Link>
                   </a>
                 </div>
               </div>
