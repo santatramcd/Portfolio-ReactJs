@@ -1,7 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 export default function Navbar() {
+  const [isMenuVisible, setMenuVisible] = useState(false);
+
+  const toggleMenu = () => {
+    setMenuVisible(!isMenuVisible);
+  };
   return (
     <div className="container py-3">
       <header
@@ -35,7 +40,7 @@ export default function Navbar() {
                 </a>
               </li>
             </ul>
-            <i className="mobile-nav-toggle d-xl-none bi bi-list"></i>
+            <i className="mobile-nav-toggle d-xl-none bi bi-list" onClick={toggleMenu}></i>
           </nav>
 
           <div className="header-social-links">
@@ -54,6 +59,25 @@ export default function Navbar() {
           </div>
         </div>
       </header>
+      <nav className={`navmenu-hidden ${isMenuVisible ? "active" : ""}`}>
+            <ul>
+              <li>
+                <a href="#" className="active">
+                <Link to="/">Home</Link>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                <Link to="/about">About</Link>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                <Link to="/contact">Contact</Link>
+                </a>
+              </li>
+            </ul>
+          </nav>
     </div>
   );
 }

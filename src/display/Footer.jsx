@@ -43,7 +43,7 @@ export default function Footer() {
         <div className="row">
           <div className="col-12 col-md">
             <h5>Features</h5>
-            <p>
+            <p className="text-justify">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero
               iusto ex eligendi deleniti sequi velit beatae atque enim aliquid
               natus quae, vel voluptates sed quasi impedit ipsam aspernatur,

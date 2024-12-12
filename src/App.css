@@ -1,12 +1,40 @@
-*{
+* {
   margin: 0;
   padding: 0;
 }
-body{
+
+body {
   width: 100%;
 
 }
-a{
+
+a {
   text-decoration: none;
   color: #333;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.navmenu-hidden {
+  display: none;
+}
+
+.navmenu-hidden.active {
+  display: block;
+}
+
+.navmenu-hidden ul {
+  background-color: color-mix(in srgb, var(--default-color), transparent 95%);
+  display: flex;
+  list-style: none;
+  gap: 10px;
+  flex-wrap: wrap;
+  text-transform: uppercase;
+  flex-direction: column;
+  padding: 10px;
+}
+.navmenu-hidden ul li a{
+  color: #fff;
 }
