@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Image1 from "../assets/gallery/gallery-1.jpg";
 import Image2 from "../assets/gallery/gallery-2.jpg";
 import Image3 from "../assets/gallery/gallery-3.jpg";
@@ -34,7 +35,7 @@ export default function Home() {
                   dolorem magni est deserunt sed qui libero. Qui voluptas amet.
                 </p>
                 <a href="#" className="btn-get-started">
-                  Available for Hire
+                  <Link to="/contact">Available for Hire</Link>
                 </a>
               </div>
             </div>

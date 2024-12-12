@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function Contact() {
   return (
@@ -24,7 +25,7 @@ export default function Contact() {
             <div class="container">
               <ol>
                 <li>
-                  <a href="index.html">Home</a>
+                  <a href="#"><Link to="/">Home</Link></a>
                 </li>
                 <li class="current">Contact</li>
               </ol>

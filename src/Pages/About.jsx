@@ -1,5 +1,6 @@
 import React from "react";
-import Profil from "../assets/gallery/profile-img.jpg"
+import { Link } from "react-router-dom";
+import Profil from "../assets/gallery/profile-img.jpg";
 export default function About() {
   return (
     <div classNameName="container py-3">
@@ -27,7 +28,7 @@ export default function About() {
             <div class="container">
               <ol>
                 <li>
-                  <a href="index.html">Home</a>
+                  <a href="#"><Link to="/">Home</Link></a>
                 </li>
                 <li class="current">About</li>
               </ol>
